@@ -7,7 +7,7 @@ description: >-
   providers exposing programmatic access to message lifecycle, deliverability,
   and inbox automation primitives.
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Email
   - Inbox
@@ -28,7 +28,7 @@ apis:
       domains, suppressions, mailing lists, webhooks, inbound routes, event
       streams, and inbox placement testing for deliverability monitoring.
     humanURL: https://www.mailgun.com/
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Email
       - Transactional Email
@@ -52,7 +52,7 @@ apis:
       labels, handle attachments, and subscribe to webhook notifications
       without integrating each provider individually.
     humanURL: https://www.nylas.com/products/email-api/
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Email
       - Unified API
