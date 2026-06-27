@@ -41,7 +41,7 @@ apis:
         url: https://documentation.mailgun.com/docs/mailgun/api-reference/openapi-final/tag/Introduction/
       - type: Pricing
         url: https://www.mailgun.com/pricing/
-      - type: SignUp
+      - type: Signup
         url: https://signup.mailgun.com/new/signup
   - aid: inbox:nylas-email-api
     name: Nylas Email API
@@ -65,7 +65,7 @@ apis:
         url: https://developer.nylas.com/docs/api/v3/ecc/
       - type: Pricing
         url: https://www.nylas.com/pricing/
-      - type: SignUp
+      - type: Signup
         url: https://dashboard-v3.nylas.com/register
 common:
   - type: Website
