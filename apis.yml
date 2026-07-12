@@ -68,6 +68,10 @@ apis:
       - type: Signup
         url: https://dashboard-v3.nylas.com/register
 common:
+  - type: TrustCenter
+    url: security/inbox-trust-center.yml
+  - type: DomainSecurity
+    url: security/inbox-domain-security.yml
   - type: Website
     url: https://apievangelist.com/
 maintainers:
