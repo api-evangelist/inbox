@@ -29,7 +29,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/inbox/refs/heads/main/apis.yml
 created: '2024-12-25'
-modified: '2026-04-28'
+modified: '2026-08-13'
 specificationVersion: '0.19'
 apis:
   - aid: inbox:mailgun-email-api
@@ -40,6 +40,7 @@ apis:
       domains, suppressions, mailing lists, webhooks, inbound routes, event
       streams, and inbox placement testing for deliverability monitoring.
     humanURL: https://www.mailgun.com/
+    baseURL: https://api.mailgun.net/v3
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Email
@@ -49,11 +50,11 @@ apis:
     properties:
       - type: Documentation
         url: https://documentation.mailgun.com/docs/mailgun/api-reference/intro/
-      - type: Reference
+      - type: APIReference
         url: https://documentation.mailgun.com/docs/mailgun/api-reference/openapi-final/tag/Introduction/
       - type: Pricing
         url: https://www.mailgun.com/pricing/
-      - type: Signup
+      - type: SignUp
         url: https://signup.mailgun.com/new/signup
   - aid: inbox:nylas-email-api
     name: Nylas Email API
@@ -64,6 +65,7 @@ apis:
       labels, handle attachments, and subscribe to webhook notifications
       without integrating each provider individually.
     humanURL: https://www.nylas.com/products/email-api/
+    baseURL: https://api.us.nylas.com/v3
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Email
@@ -73,19 +75,64 @@ apis:
     properties:
       - type: Documentation
         url: https://developer.nylas.com/docs/v3/email/
-      - type: Reference
+      - type: APIReference
         url: https://developer.nylas.com/docs/api/v3/ecc/
       - type: Pricing
         url: https://www.nylas.com/pricing/
-      - type: Signup
+      - type: SignUp
         url: https://dashboard-v3.nylas.com/register
 common:
   - type: TrustCenter
     url: security/inbox-trust-center.yml
   - type: DomainSecurity
     url: security/inbox-domain-security.yml
+  - type: LLMsTxt
+    url: llms/inbox-llms.txt
   - type: Website
     url: https://apievangelist.com/
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-attribution:
+  # Flagged 2026-08-13 by the enrichment pipeline (STEP 0c ownership check) for human review.
+  # "Inbox" is an API Evangelist editorial index of email/inbox API platforms, not a company.
+  # It owns no domain, ships no API, and has no developer surface of its own. Both APIs it
+  # lists are published by third parties that already carry full API Evangelist profiles:
+  #   Mailgun Email API -> all/mailgun (7 OpenAPIs + AsyncAPI harvested)
+  #   Nylas Email API   -> all/nylas   (9 OpenAPIs harvested)
+  # Two artifacts already in this repo describe THOSE companies' surfaces, not this index's:
+  #   security/inbox-trust-center.yml   -> trust.sinch.com/?product=mailgun (Sinch's trust center)
+  #   security/inbox-domain-security.yml -> mailgun.com + nylas.com DNS/TLS posture
+  # They are left in place rather than silently deleted, but the TrustCenter pointer above
+  # credits this index with Sinch's compliance program and should be reviewed. No further
+  # third-party-derived artifact or pointer was added by this pass.
+  # Also flagged: plans/inbox-plans-pricing.yml and rate-limits/inbox-rate-limits.yml are
+  # 2026-05-04 scaffold files (now stamped `method: generated`, roadmap#35) whose tiers and
+  # 10/100/1000 rpm limits were never published by anyone — this index sells nothing and
+  # throttles nothing. Left for the scaffold sweep rather than rewritten here.
+  index_of_third_party_apis: true
+  duplicates_profiles: [mailgun, nylas]
+  review: duplicate-index-candidate
+x-enrichment:
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Inbox is an API Evangelist editorial index of email API platforms, not a company — it owns
+    no domain and ships no API, and the two APIs it lists (Mailgun, Nylas) are published by
+    third parties whose own profiles already hold their specs, so nothing discoverable here
+    belongs to this entry.
+  evidence:
+    - url: https://developer.nylas.com/.well-known/api-catalog
+      status: 200
+    - url: https://documentation.mailgun.com/llms.txt
+      status: 200
+    - url: https://api.mailgun.net/openapi.json
+      status: 404
+    - url: https://api.us.nylas.com/.well-known/agent-card.json
+      status: 404
+  checked: '2026-08-13'
