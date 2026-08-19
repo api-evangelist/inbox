@@ -1,0 +1,159 @@
+generated: '2026-08-13'
+method: probed
+source: live GET of /.well-known/* and root spec paths on every host named in apis.yml
+
+# ATTRIBUTION — READ BEFORE USING THIS FILE.
+# "Inbox" is an API Evangelist editorial index of email/inbox API platforms. It is not a
+# company, it owns no domain, and it serves no /.well-known/ surface of its own. Every host
+# probed below belongs to a THIRD PARTY (Mailgun/Sinch, Nylas) that has its own API Evangelist
+# profile at all/mailgun/ and all/nylas/. This file is a record of what those hosts answered,
+# NOT a claim that the Inbox index publishes any of it.
+#
+# For that reason NO `WellKnown` and NO `SecurityTxt` pointer is wired into apis.yml from this
+# file, even though two probes returned real documents. Those two hits are findings for the
+# Mailgun and Nylas repos to carry, not for this index to be credited with.
+attribution:
+  index_owns_no_host: true
+  hosts_belong_to:
+    - host: www.mailgun.com
+      company: Mailgun (Sinch)
+      profile: all/mailgun
+    - host: api.mailgun.net
+      company: Mailgun (Sinch)
+      profile: all/mailgun
+    - host: documentation.mailgun.com
+      company: Mailgun (Sinch)
+      profile: all/mailgun
+    - host: www.nylas.com
+      company: Nylas
+      profile: all/nylas
+    - host: api.us.nylas.com
+      company: Nylas
+      profile: all/nylas
+    - host: developer.nylas.com
+      company: Nylas
+      profile: all/nylas
+
+probes:
+  - host: https://www.mailgun.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /llms.txt, status: 404}
+      - {path: /openapi.json, status: 404}
+      - {path: /openapi.yaml, status: 404}
+      - {path: /swagger.json, status: 404}
+      - {path: /api-docs, status: 404}
+  - host: https://api.mailgun.net
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /llms.txt, status: 404}
+      - {path: /openapi.json, status: 404}
+      - {path: /openapi.yaml, status: 404}
+      - {path: /swagger.json, status: 404}
+      - {path: /api-docs, status: 404}
+  - host: https://documentation.mailgun.com
+    documents:
+      - path: /llms.txt
+        status: 200
+        content_type: text/plain; charset=utf-8
+        bytes: 28472
+        note: >-
+          Real llms.txt published by Mailgun ("# Mailgun Documentation"). Belongs to all/mailgun;
+          not saved or pointed at from this index.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        content_type: application/json
+        note: >-
+          RFC 8414 metadata for the Redocly docs platform (issuer auth.cloud.redocly.com), not for
+          the Mailgun API itself. Records the docs vendor's login, not an API authorization server.
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /openapi.json, status: 404}
+      - {path: /openapi.yaml, status: 404}
+      - {path: /swagger.json, status: 404}
+      - {path: /api-docs, status: 404}
+  - host: https://www.nylas.com
+    documents:
+      - path: /llms.txt
+        status: 200
+        content_type: text/plain
+        bytes: 194792
+        note: Marketing-site llms.txt published by Nylas. Belongs to all/nylas.
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /openapi.json, status: 404}
+      - {path: /openapi.yaml, status: 404}
+      - {path: /swagger.json, status: 404}
+      - {path: /api-docs, status: 404}
+  - host: https://api.us.nylas.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /llms.txt, status: 404}
+      - {path: /openapi.json, status: 404}
+      - {path: /openapi.yaml, status: 404}
+      - {path: /swagger.json, status: 404}
+      - {path: /api-docs, status: 404}
+  - host: https://developer.nylas.com
+    documents:
+      - path: /.well-known/api-catalog
+        status: 200
+        content_type: application/linkset+json
+        bytes: 1024
+        note: >-
+          Real RFC 9727 linkset published by Nylas. Anchors https://api.us.nylas.com/v3/ and
+          https://api.eu.nylas.com/v3/ to service-desc
+          https://developer.nylas.com/_spec-files/nylas-api.yaml, service-doc
+          https://developer.nylas.com/docs/reference/api/, and status https://status.nylas.com/.
+          FINDING FOR all/nylas — a WellKnown/APICatalog pointer and the linked OpenAPI belong
+          on the Nylas profile, not on this index.
+      - path: /llms.txt
+        status: 200
+        content_type: text/plain; charset=utf-8
+        bytes: 76964
+        note: Docs llms.txt published by Nylas. Belongs to all/nylas.
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /openapi.json, status: 404}
+      - {path: /openapi.yaml, status: 404}
+      - {path: /swagger.json, status: 404}
+      - {path: /api-docs, status: 404}
+
+summary:
+  hosts_probed: 6
+  paths_per_host: 12
+  documents_found: 4
+  documents_owned_by_this_index: 0
+  agent_cards_found: 0
+  security_txt_found: 0
+  pointers_emitted: []

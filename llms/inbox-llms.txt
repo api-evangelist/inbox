@@ -1,0 +1,40 @@
+# Inbox
+
+> Inbox is an API Evangelist index of email and inbox-oriented API platforms that developers use to send, receive, parse, route, schedule, and verify email messages. The index focuses on transactional and conversational email providers exposing programmatic access to message lifecycle, deliverability, and inbox automation primitives. Inbox is an editorial index maintained by API Evangelist — it is not a company and it operates no API of its own. Every API listed below is published and operated by the third-party company named in the entry.
+
+## APIs indexed
+
+- [Mailgun Email API](https://www.mailgun.com/): Programmable email API for sending, receiving, tracking, and validating email at scale — messages, domains, suppressions, mailing lists, webhooks, inbound routes, event streams, and inbox placement testing. Operated by Mailgun (Sinch). Base: https://api.mailgun.net/v3
+- [Nylas Email API](https://www.nylas.com/products/email-api/): Unified REST API for email, calendar, contacts, and scheduling across Google, Microsoft, iCloud, and IMAP — read, send, and thread messages, manage folders and labels, handle attachments, and subscribe to webhook notifications. Operated by Nylas. Base: https://api.us.nylas.com/v3
+
+## Documentation
+
+- [Mailgun API reference](https://documentation.mailgun.com/docs/mailgun/api-reference/intro/): Mailgun's own API reference.
+- [Mailgun llms.txt](https://documentation.mailgun.com/llms.txt): Mailgun-published llms.txt (HTTP 200, 2026-08-13).
+- [Nylas v3 email docs](https://developer.nylas.com/docs/v3/email/): Nylas' own email documentation.
+- [Nylas API catalog](https://developer.nylas.com/.well-known/api-catalog): RFC 9727 linkset published by Nylas pointing at its OpenAPI and status page (HTTP 200, 2026-08-13).
+- [Nylas llms.txt](https://developer.nylas.com/llms.txt): Nylas-published llms.txt (HTTP 200, 2026-08-13).
+
+## Pricing
+
+- [Mailgun pricing](https://www.mailgun.com/pricing/)
+- [Nylas pricing](https://www.nylas.com/pricing/)
+
+## Sign up
+
+- [Mailgun signup](https://signup.mailgun.com/new/signup)
+- [Nylas signup](https://dashboard-v3.nylas.com/register)
+
+## Where the machine-readable contracts live
+
+Inbox indexes these APIs; it does not host their specifications. The harvested OpenAPI, AsyncAPI,
+authentication and security artifacts for each provider live in that provider's own API Evangelist
+profile, not here.
+
+- [Mailgun profile (apis.yml)](https://raw.githubusercontent.com/api-evangelist/mailgun/refs/heads/main/apis.yml)
+- [Nylas profile (apis.yml)](https://raw.githubusercontent.com/api-evangelist/nylas/refs/heads/main/apis.yml)
+
+## About this index
+
+- [Inbox index (apis.yml)](https://raw.githubusercontent.com/api-evangelist/inbox/refs/heads/main/apis.yml): The APIs.json index document this file was generated from.
+- [API Evangelist](https://apievangelist.com/): Maintainer of this index.
