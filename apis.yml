@@ -1,5 +1,6 @@
 aid: inbox
 name: Inbox
+kind: topic
 # x-type: index -- an API Evangelist INDEX, not a company (roadmap#402). This record is
 # this catalog's own aggregation of other people's APIs. score.rb's NON_PROVIDER_X_TYPES
 # excludes it from rating and from provider lists; the page stays, because it is a real
@@ -85,7 +86,7 @@ apis:
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     tags:
       - Email
-      - Unified-API
+      - Unified API
       - IMAP
       - Webhook
     tags_raw:
@@ -93,6 +94,7 @@ apis:
       - Unified API
       - IMAP
       - Webhooks
+      - Unified-API
     properties:
       - type: Documentation
         url: https://developer.nylas.com/docs/v3/email/
