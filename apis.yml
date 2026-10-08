@@ -105,6 +105,12 @@ apis:
       - type: SignUp
         url: https://dashboard-v3.nylas.com/register
 common:
+  - type: Plans
+    url: plans/inbox-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/inbox-rate-limits.yml
+  - type: FinOps
+    url: finops/inbox-finops.yml
   - type: TrustCenter
     url: security/inbox-trust-center.yml
   - type: DomainSecurity
