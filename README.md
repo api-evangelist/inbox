@@ -1,4 +1,4 @@
-# Inbox (inbox)
+# inbox
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,67 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Inbox is an API Evangelist index of email and inbox-oriented API platforms that developers use to send, receive, parse, route, schedule, and verify email messages. The index focuses on transactional and conversational email providers exposing programmatic access to message lifecycle, deliverability, and inbox automation primitives.
+## inbox on APIs.io
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/inbox/refs/heads/main/apis.yml)
+Everything profiled for inbox is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/inbox/](https://apis.io/providers/inbox/)** — or go straight to one of the APIs or properties below.
 
-## Scope
+## API Evangelist rating
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Not yet rated. See [apis.io/providers/inbox/](https://apis.io/providers/inbox/).
 
-## Tags:
+## How this profile is made
 
- - Email, Inbox, Messaging, Deliverability, Transactional Email
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Timestamps
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for inbox: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- **Created:** 2024-12-25
-- **Modified:** 2026-04-28
+## Open an issue
 
-## APIs
-
-### Mailgun Email API
-
-Mailgun provides a programmable email API for sending, receiving, tracking, and validating email at scale. Endpoints cover messages, domains, suppressions, mailing lists, webhooks, inbound routes, event streams, and inbox placement testing for deliverability monitoring.
-
-**Human URL:** [https://www.mailgun.com/](https://www.mailgun.com/)
-
-#### Tags:
-
- - Email, Transactional Email, Deliverability, Inbound Parsing
-
-#### Properties
-
-- [Documentation](https://documentation.mailgun.com/docs/mailgun/api-reference/intro/)
-- [Reference](https://documentation.mailgun.com/docs/mailgun/api-reference/openapi-final/tag/Introduction/)
-- [Pricing](https://www.mailgun.com/pricing/)
-- [SignUp](https://signup.mailgun.com/new/signup)
-
-### Nylas Email API
-
-Nylas exposes a unified REST API for email, calendar, contacts, and scheduling across Google, Microsoft, iCloud, and IMAP providers. Developers can read, send, and thread messages, manage folders and labels, handle attachments, and subscribe to webhook notifications without integrating each provider individually.
-
-**Human URL:** [https://www.nylas.com/products/email-api/](https://www.nylas.com/products/email-api/)
-
-#### Tags:
-
- - Email, Unified API, IMAP, Webhooks
-
-#### Properties
-
-- [Documentation](https://developer.nylas.com/docs/v3/email/)
-- [Reference](https://developer.nylas.com/docs/api/v3/ecc/)
-- [Pricing](https://www.nylas.com/pricing/)
-- [SignUp](https://dashboard-v3.nylas.com/register)
-
-## Common Properties
-
-- [Website](https://apievangelist.com/)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/inbox/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
